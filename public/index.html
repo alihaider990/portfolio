@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ali Haider — Software Engineer</title>
+<meta name="description" content="Ali Haider is a Software Engineer in Karachi, Pakistan, building backend systems, REST APIs, real-time applications and AI-powered solutions with Node.js, Java and Python.">
+<meta name="theme-color" content="#080A12">
+<link rel="canonical" href="__SITE_URL__/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="__SITE_URL__/">
+<meta property="og:image" content="__SITE_URL__/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Ali Haider">
+<meta property="og:title" content="Ali Haider — Software Engineer">
+<meta property="og:description" content="Backend systems, APIs, real-time applications and AI-powered solutions.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ali Haider — Software Engineer">
+<meta name="twitter:image" content="__SITE_URL__/og-image.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23101525'/%3E%3Ctext x='32' y='42' font-size='28' font-family='Arial' font-weight='700' text-anchor='middle' fill='%238957FF'%3EAH%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#080A12;--surf:#101525;--v:#8957FF;--c:#32D9FF;--lav:#B7A3FF;--ink:#F5F5FA;--mute:#9AA1BC;--line:rgba(183,163,255,.16);
+--sans:'Sora','Segoe UI',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,Consolas,monospace;color-scheme:dark;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.7 var(--sans);overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(60% 50% at 85% 0%,rgba(137,87,255,.18),transparent 70%),radial-gradient(50% 40% at 0% 60%,rgba(50,217,255,.08),transparent 70%)}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--c);outline-offset:3px;border-radius:8px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+section{padding:100px 0}
+h2{font:700 clamp(30px,4.5vw,46px)/1.1 var(--sans);letter-spacing:-.03em;margin:0 0 14px}
+.lead{color:var(--mute);max-width:38em;margin:0 0 48px}
+.glass{background:linear-gradient(160deg,rgba(255,255,255,.055),rgba(255,255,255,.02));border:1px solid var(--line);border-radius:22px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+#bar{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 0;transform:scaleX(0);background:linear-gradient(90deg,var(--v),var(--c));z-index:60}
+#load{position:fixed;inset:0;background:var(--bg);z-index:100;display:grid;place-items:center;transition:opacity .5s,visibility .5s}
+#load.off{opacity:0;visibility:hidden}
+#load i{width:44px;height:44px;border-radius:50%;border:2px solid var(--line);border-top-color:var(--c);animation:sp .8s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+nav{position:fixed;top:calc(12px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);z-index:50;width:min(880px,calc(100% - 24px));display:flex;align-items:center;justify-content:space-between;padding:8px 10px 8px 20px;border-radius:999px}
+nav .logo{font-weight:700;letter-spacing:-.02em}
+nav ul{display:flex;gap:2px;list-style:none;margin:0;padding:0}
+nav ul a{display:block;padding:8px 13px;border-radius:999px;color:var(--mute);font-size:14px;transition:.2s}
+nav ul a:hover,nav ul a.on{color:var(--ink);background:rgba(137,87,255,.2)}
+#burger{display:none;background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;width:40px;height:40px;cursor:pointer;font-size:18px}
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden}
+#gl{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero .wrap{position:relative;z-index:2;width:100%}
+.hero h1{font:700 clamp(46px,8.5vw,108px)/.95 var(--sans);letter-spacing:-.045em;margin:0 0 14px}
+.hero .role{font:600 clamp(20px,3vw,30px) var(--sans);color:var(--lav);margin:0 0 20px}
+.hero p{color:var(--mute);max-width:34em;margin:0 0 14px;font-size:18px}
+.in{opacity:0;transform:translateY(26px);animation:in .9s cubic-bezier(.2,.8,.2,1) forwards}
+.in:nth-child(2){animation-delay:.1s}.in:nth-child(3){animation-delay:.2s}.in:nth-child(4){animation-delay:.3s}.in:nth-child(5){animation-delay:.4s}
+@keyframes in{to{opacity:1;transform:none}}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.05);color:var(--ink);font:600 15px var(--sans);cursor:pointer;transition:box-shadow .3s,border-color .3s,background .3s}
+.btn:hover{border-color:var(--v);box-shadow:0 10px 30px -10px var(--v)}
+.btn.main{background:linear-gradient(110deg,var(--v),#5c7cff);border:0}
+.mag{will-change:transform}
+.about{display:grid;grid-template-columns:1.25fr 1fr;gap:40px;align-items:start}
+.about p{color:var(--mute);margin:0 0 16px}
+.facts{padding:28px;display:grid;gap:18px}
+.facts div span{display:block;color:var(--mute);font-size:13px}
+.facts div b{font-weight:600}
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:20px}
+.cat{padding:26px;transition:opacity .3s,transform .3s,border-color .3s}
+.cats:has(.cat:hover) .cat:not(:hover){opacity:.5}
+.cat:hover{border-color:var(--v);transform:translateY(-4px)}
+.cat h3{font-size:17px;margin:0 0 16px;display:flex;align-items:center;gap:10px}
+.cat h3 svg{width:22px;height:22px;stroke:var(--c);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{font:400 13px var(--mono);padding:6px 12px;border-radius:999px;border:1px solid var(--line);color:var(--ink);display:inline-flex;align-items:center;gap:8px;transition:.25s}
+.chips span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--v);transition:.25s}
+.chips span:hover{border-color:var(--c);transform:translateY(-2px)}.chips span:hover::before{background:var(--c);box-shadow:0 0 10px var(--c)}
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:20px}
+.card{padding:26px;transition:transform .3s,border-color .3s}
+.card:hover{transform:translateY(-5px);border-color:var(--v)}
+.card svg{width:30px;height:30px;stroke:var(--c);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;margin-bottom:14px}
+.card h3{font-size:17px;margin:0 0 8px}.card p{margin:0;color:var(--mute);font-size:15px}
+.cta{margin-top:40px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.cta p{margin:0;font:600 20px var(--sans)}
+.pj{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:20px}
+.pc{padding:26px;display:flex;flex-direction:column;gap:12px;transition:transform .3s,border-color .3s}.pc:hover{transform:translateY(-4px);border-color:var(--v)}
+.pc h3{margin:0;font-size:19px}.pc p{margin:0;color:var(--mute);font-size:15px}.pc .row{margin-top:auto;padding-top:6px}
+.pc img{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);display:block}
+.pc .btn{padding:9px 18px;font-size:14px}
+.rvw blockquote{margin:0 0 14px;color:var(--ink);font-size:16px}.rvw b{display:block}.rvw small{color:var(--mute)}
+.learn{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px}
+.learn div{padding:22px;position:relative;overflow:hidden}
+.learn div::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:100%;background:linear-gradient(90deg,var(--v),var(--c),var(--v));background-size:200% 100%;animation:sl 3s linear infinite}
+@keyframes sl{to{background-position:-200% 0}}
+.learn b{display:block;font-size:16px;margin-bottom:4px}.learn small{color:var(--lav);font:400 12px var(--mono)}
+#arch{width:100%;height:auto;display:block}
+.nd{cursor:pointer}
+.nd rect{fill:#101525;stroke:rgba(183,163,255,.35);stroke-width:1.2;transition:.25s}
+.nd:hover rect,.nd:focus rect,.nd.sel rect{stroke:var(--c);fill:#17203a;filter:drop-shadow(0 0 10px rgba(50,217,255,.5))}
+.nd text{fill:var(--ink);font:600 14px var(--sans);text-anchor:middle;pointer-events:none}
+.fl{stroke:var(--v);stroke-width:1.6;stroke-dasharray:6 6;animation:dash 1.2s linear infinite;opacity:.8}
+@keyframes dash{to{stroke-dashoffset:-12}}
+#info{padding:22px 26px;margin-top:16px;min-height:96px}#info b{color:var(--c)}#info p{margin:6px 0 0;color:var(--mute)}
+.note{font-size:13px;color:var(--mute);margin-top:12px}
+.term{font-family:var(--mono);font-size:14px;overflow:hidden}
+.tbar{display:flex;gap:7px;padding:12px 16px;border-bottom:1px solid var(--line)}.tbar i{width:11px;height:11px;border-radius:50%;background:rgba(255,255,255,.18)}
+#tout{height:280px;overflow:auto;padding:16px 18px;line-height:1.6}
+#tout div{margin-bottom:6px;white-space:pre-wrap;word-break:break-word}#tout a{color:var(--c);text-decoration:underline}#tout .p{color:var(--lav)}
+.tin{display:flex;gap:10px;padding:12px 18px;border-top:1px solid var(--line);align-items:center}.tin span{color:var(--c)}
+.tin input{flex:1;background:none;border:0;color:var(--ink);font:inherit;outline:0;min-width:0}
+.qs{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.qs button{font:400 13px var(--mono);padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:none;color:var(--mute);cursor:pointer}.qs button:hover{color:var(--ink);border-color:var(--c)}
+#repos{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:16px;margin-top:28px}
+#repos a{padding:20px;display:block;transition:.3s}#repos a:hover{border-color:var(--c);transform:translateY(-3px)}
+#repos b{display:block;font-family:var(--mono);font-size:15px;margin-bottom:6px}#repos small{color:var(--mute)}
+.ct{display:grid;grid-template-columns:.9fr 1.1fr;gap:32px;align-items:start}
+.ct h2{font-size:clamp(34px,5vw,56px)}
+.links{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.mail{margin-top:14px;font:400 14px var(--mono);color:var(--mute)}
+form{padding:30px}
+.step{display:none}.step.on{display:block;animation:in .5s forwards}
+form h3{margin:0 0 18px;font-size:20px}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.opts button{text-align:left;padding:14px 16px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--ink);font:400 14px var(--sans);cursor:pointer;transition:.25s}
+.opts button:hover,.opts button:focus-visible{border-color:var(--c);background:rgba(50,217,255,.08)}
+.fld{position:relative;margin-bottom:16px}
+.fld input,.fld textarea,.fld select{width:100%;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:12px;padding:20px 14px 8px;color:var(--ink);font:400 15px var(--sans);transition:border-color .2s,box-shadow .2s}
+.fld select option{background:#101525}
+.fld textarea{min-height:120px;resize:vertical}
+.fld label{position:absolute;left:14px;top:14px;color:var(--mute);font-size:14px;pointer-events:none;transition:.2s;transform-origin:0 0}
+.fld input:focus,.fld textarea:focus,.fld select:focus{outline:0;border-color:var(--c);box-shadow:0 0 0 3px rgba(50,217,255,.15)}
+.fld input:focus+label,.fld input:not(:placeholder-shown)+label,.fld textarea:focus+label,.fld textarea:not(:placeholder-shown)+label,.fld select+label{transform:translateY(-9px) scale(.78)}
+.fld.bad input,.fld.bad textarea{border-color:#ff6b81}
+.err{color:#ff8a9b;font-size:13px;display:block;margin-top:4px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+#msg{margin-top:16px;padding:0;font-size:15px}#msg.ok{color:#6ff0b0}#msg.no{color:#ff8a9b}
+.spin{width:16px;height:16px;border:2px solid rgba(255,255,255,.4);border-top-color:#fff;border-radius:50%;animation:sp .7s linear infinite;display:none}
+.busy .spin{display:inline-block}
+footer{padding:30px 24px 50px;text-align:center;color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
+#top{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--surf);color:var(--ink);cursor:pointer;opacity:0;pointer-events:none;transition:.3s;z-index:40;font-size:18px}
+#top.on{opacity:1;pointer-events:auto}
+#lamp{position:fixed;width:460px;height:460px;border-radius:50%;left:0;top:0;pointer-events:none;z-index:-1;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(137,87,255,.16),transparent 65%);display:none}
+@media (pointer:fine){#lamp{display:block}}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s cubic-bezier(.2,.8,.2,1)}.rv.on{opacity:1;transform:none}
+@media (max-width:860px){.about,.ct{grid-template-columns:1fr}#burger{display:block}
+nav ul{display:none;position:absolute;top:60px;left:0;right:0;flex-direction:column;padding:10px;border-radius:22px;background:rgba(16,21,37,.96);border:1px solid var(--line)}nav ul.open{display:flex}.opts,.two{grid-template-columns:1fr}section{padding:76px 0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}.in,.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="load" aria-hidden="true"><i></i></div>
+<div id="bar" aria-hidden="true"></div><div id="lamp" aria-hidden="true"></div>
+<nav class="glass" aria-label="Main">
+  <a class="logo" href="#home">Ali Haider</a>
+  <button id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
+  <ul id="menu">
+    <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li id="nvp" hidden><a href="#projects">Projects</a></li><li><a href="#expertise">Expertise</a></li><li><a href="#services">Services</a></li><li id="nvr" hidden><a href="#reviews">Reviews</a></li><li><a href="#github">GitHub</a></li><li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header id="home" class="hero">
+  <canvas id="gl" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <h1 class="in">ALI HAIDER</h1>
+    <p class="role in">Software Engineer</p>
+    <p class="in">I build backend systems, REST APIs and real-time applications with Node.js, Java and Python.</p>
+    
+    <div class="btns in">
+      <a class="btn main mag" href="#contact">Contact Me</a>
+      <a class="btn mag" id="gh1" href="#" target="_blank" rel="noopener">View GitHub</a>
+      <a class="btn mag" id="cv" href="#" hidden download>Download CV</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="about"><div class="wrap about">
+  <div class="rv">
+    <h2>About me</h2>
+    <p>I'm Ali Haider, a Software Engineer based in Karachi, Pakistan, with a Bachelor's degree in Software Engineering from SZABIST. I specialize in backend development and full-stack engineering, building reliable applications, APIs, real-time systems and AI-powered solutions.</p>
+    <p>My technical experience includes HTML, CSS, JavaScript, Node.js, Express.js, MongoDB, Java, Python, Redis and Docker.</p>
+    
+    
+    <p>I enjoy solving complex engineering problems, designing backend architectures, working with databases and developing scalable software solutions.</p>
+  </div>
+  <div class="glass facts rv">
+    <div><span>Based in</span><b>Karachi, Pakistan</b></div>
+    <div><span>Education</span><b>BS Software Engineering, SZABIST</b></div>
+    <div><span>Focus</span><b>Backend and full-stack engineering</b></div>
+    <div><span>Open to</span><b>Freelance, remote roles and collaboration</b></div>
+  </div>
+</div></section>
+
+<section id="projects" hidden><div class="wrap">
+  <h2 class="rv">Projects</h2>
+  <p class="lead rv">Things I have built and shipped.</p>
+  <div class="pj" id="pj"></div>
+</div></section>
+
+<section id="expertise"><div class="wrap">
+  <h2 class="rv">Technical expertise</h2>
+  <p class="lead rv">The tools and concepts I work with. Hover a group to focus on it.</p>
+  <div class="cats rv" id="cats"></div>
+</div></section>
+
+<section id="services"><div class="wrap">
+  <h2 class="rv">What I can build</h2>
+  <p class="lead rv">Types of solutions I can help develop.</p>
+  <div class="svc" id="svc"></div>
+  <div class="cta rv"><p>Have a project in mind? Let's talk.</p><a class="btn main mag" href="#contact">Start a conversation</a></div>
+</div></section>
+
+
+
+<section id="reviews" hidden><div class="wrap">
+  <h2 class="rv">What people say</h2>
+  <p class="lead rv">Feedback from people I have worked with.</p>
+  <div class="svc" id="rw"></div>
+</div></section>
+
+<section id="architecture"><div class="wrap">
+  <h2 class="rv">How a backend fits together</h2>
+  <p class="lead rv">Click a component to see what it does.</p>
+  <div class="glass rv" style="padding:18px">
+  <svg id="arch" viewBox="0 0 700 400" role="group" aria-label="Simplified backend architecture diagram">
+    <g id="lines"></g><g id="nodes"></g>
+  </svg></div>
+  <div class="glass" id="info" aria-live="polite"><b>Select a component</b><p>Click or press Enter on any box above.</p></div>
+  <p class="note">This is an educational visualization of technologies and concepts I work with. It does not represent a deployed production system.</p>
+</div></section>
+
+<section id="terminal"><div class="wrap">
+  <h2 class="rv">Developer terminal</h2>
+  <p class="lead rv">Type a command, or tap one below.</p>
+  <div class="glass term rv">
+    <div class="tbar"><i></i><i></i><i></i></div>
+    <div id="tout" role="log" aria-live="polite"></div>
+    <form class="tin" id="tf" autocomplete="off"><span>&gt;</span><input id="ti" aria-label="Terminal command" placeholder="type help" spellcheck="false"></form>
+  </div>
+  <div class="qs" id="qs"></div>
+</div></section>
+
+<section id="github"><div class="wrap">
+  <h2 class="rv">GitHub</h2>
+  <p class="lead rv">My public code lives on GitHub. Below are my most recently updated public repositories, loaded live from GitHub.</p>
+  <a class="btn main mag rv" id="gh2" href="#" target="_blank" rel="noopener">View GitHub Profile</a>
+  <div id="repos" aria-live="polite"></div>
+</div></section>
+
+<section id="contact"><div class="wrap ct">
+  <div class="rv">
+    <h2>Let's Build Something Together</h2>
+    <p class="lead" style="margin-bottom:0">Have an idea, an opportunity, or a technical challenge? Tell me about it.</p>
+    <div class="links">
+      <a class="btn mag" id="em" href="#">Email</a>
+      <a class="btn mag" id="li" href="#" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn mag" id="gh3" href="#" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn mag" id="wa" href="#" target="_blank" rel="noopener" hidden>WhatsApp</a>
+      <button class="btn mag" id="cp" type="button">Copy email</button>
+    </div>
+    <p class="mail" id="mailtxt"></p>
+  </div>
+  <form class="glass rv" id="f" novalidate>
+    <div class="step on" data-s="1"><h3>What are you looking for?</h3><div class="opts" id="opts"></div></div>
+    <div class="step" data-s="2">
+      <h3 id="ft"></h3>
+      <div class="two">
+        <div class="fld"><input id="fn" name="name" placeholder=" " autocomplete="name" maxlength="100"><label for="fn">Full name</label><span class="err"></span></div>
+        <div class="fld"><input id="fe" name="email" type="email" placeholder=" " autocomplete="email" maxlength="200"><label for="fe">Email address</label><span class="err"></span></div>
+      </div>
+      <div class="fld"><input id="fo" name="org" placeholder=" " maxlength="150"><label for="fo">Company or organization (optional)</label></div>
+      <div class="fld"><textarea id="fd" name="details" placeholder=" " maxlength="3000"></textarea><label for="fd" id="fdl">Project details</label><span class="err"></span></div>
+      <div class="two" id="biz">
+        <div class="fld"><select id="fb" name="budget"><option value="">Not sure yet</option><option>Under $500</option><option>$500 – $2,000</option><option>$2,000 – $5,000</option><option>$5,000+</option></select><label for="fb">Estimated budget (optional)</label></div>
+        <div class="fld"><input id="ft2" name="timeline" placeholder=" " maxlength="100"><label for="ft2">Expected timeline (optional)</label></div>
+      </div>
+      <div class="fld"><input id="fl" name="link" placeholder=" " maxlength="300" inputmode="url"><label for="fl">Website or reference link (optional)</label><span class="err"></span></div>
+      <input class="hp" name="company_site" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="row"><button type="button" class="btn" id="back">Back</button><button type="submit" class="btn main" id="send"><span class="spin"></span><span id="sl">Send message</span></button></div>
+      <div id="msg" role="status" aria-live="polite"></div>
+    </div>
+  </form>
+</div></section>
+</main>
+<footer>© <span id="yr"></span> Ali Haider · Software Engineer · Karachi, Pakistan</footer>
+<button id="top" aria-label="Back to top">↑</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+<script defer>
+const CONFIG={email:"alihaidergr8@gmail.com",linkedin:"https://linkedin.com/in/alihaider990",github:"https://github.com/alihaider990",
+ whatsapp:"" /* digits only with country code, e.g. 923001234567 */,
+ cv:"Ali-Haider-CV.pdf" /* put this PDF in the public folder; the button appears automatically when the file exists */,
+ api:window.PORTFOLIO_API||"/api/inquiry"};
+/* Add real projects here (leave empty to hide the section). Example:
+   {name:"Chat App",desc:"Real-time chat with rooms and JWT auth.",stack:["Node.js","Socket.IO","MongoDB"],live:"https://...",code:"https://github.com/alihaider990/...",img:"shot.png"} */
+const PROJECTS=[];
+/* Add real reviews here (leave empty to hide the section). Example:
+   {quote:"Delivered on time and communicated clearly.",name:"Full Name",role:"Role, Company"} */
+const REVIEWS=[];
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const T0=Date.now();
+window.addEventListener('DOMContentLoaded',()=>{
+$('#yr').textContent=new Date().getFullYear();
+['gh1','gh2','gh3'].forEach(i=>$('#'+i).href=CONFIG.github);
+$('#li').href=CONFIG.linkedin;$('#em').href='mailto:'+CONFIG.email;$('#mailtxt').textContent=CONFIG.email;
+if(CONFIG.cv){fetch(CONFIG.cv,{method:'HEAD'}).then(r=>{if(r.ok){const a=$('#cv');a.href=CONFIG.cv;a.hidden=false}}).catch(()=>{})}
+if(CONFIG.whatsapp){const a=$('#wa');a.href='https://wa.me/'+CONFIG.whatsapp.replace(/\D/g,'');a.hidden=false}
+$('#cp').onclick=async e=>{const b=e.currentTarget;try{await navigator.clipboard.writeText(CONFIG.email);b.textContent='Copied'}catch{b.textContent='Press Ctrl+C on the address above'}setTimeout(()=>b.textContent='Copy email',2200)};
+
+/* content */
+const I={api:'M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16',web:'M3 5h18v14H3zM3 9h18',rt:'M3 12h4l3-8 4 16 3-8h4',db:'M4 6c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3zM4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3',auth:'M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6zM9 12l2 2 4-4',cache:'M13 2L4 14h7l-1 8 9-12h-7z',bot:'M5 8h14v10H5zM12 4v4M9 13h.01M15 13h.01M9 16h6',flow:'M4 5h6v5H4zM14 14h6v5h-6zM10 7.5h4a3 3 0 0 1 3 3V14',tool:'M14 6l4 4-8 8H6v-4zM13 7l4 4',cs:'M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01'};
+const svg=d=>`<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${d}"/></svg>`;
+$('#cats').innerHTML=[['Backend','api',['JavaScript','Node.js','Express.js','Java','Python']],['Frontend','web',['HTML','CSS','JavaScript']],['Databases','db',['MongoDB','Redis','SQL','Pinecone']],['APIs','rt',['REST APIs','JWT','Socket.IO']],['Tools and DevOps','tool',['Docker','Git','GitHub','Postman','Render','n8n']],['Computer Science','cs',['Object-Oriented Programming','Data Structures and Algorithms','API Design','Authentication','Caching','Rate Limiting','System Design']]]
+ .map(c=>`<div class="glass cat"><h3>${svg(I[c[1]])}${c[0]}</h3><div class="chips">${c[2].map(x=>`<span>${x}</span>`).join('')}</div></div>`).join('');
+$('#svc').innerHTML=[['cs','Backend Development','Server-side logic, business rules and services that power your product.'],['api','REST API Development','Clean, well-documented APIs with authentication and rate limiting.'],['web','Full-Stack Web Applications','Web apps with a working backend, database and user-facing interface.'],['rt','Real-Time Applications','Live features such as chat and instant notifications using Socket.IO.'],['db','Database Integration','Designing and connecting MongoDB, SQL and Redis to your application.'],['bot','AI Chatbot & Workflow Automation','Chatbot integrations and automated business workflows using n8n.']]
+ .map(s=>`<div class="glass card rv">${svg(I[s[0]])}<h3>${s[1]}</h3><p>${s[2]}</p></div>`).join('');
+
+
+const esc=t=>String(t).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const okUrl=u=>/^https?:\/\//i.test(u||'')||/^[\w\-./]+$/.test(u||'');
+if(PROJECTS.length){$('#projects').hidden=false;$('#nvp').hidden=false;
+ $('#pj').innerHTML=PROJECTS.map(p=>`<article class="glass pc rv">${p.img&&okUrl(p.img)?`<img src="${esc(p.img)}" alt="Screenshot of ${esc(p.name)}" loading="lazy">`:''}<h3>${esc(p.name)}</h3><p>${esc(p.desc)}</p><div class="chips">${(p.stack||[]).map(x=>`<span>${esc(x)}</span>`).join('')}</div><div class="row">${p.live&&okUrl(p.live)?`<a class="btn main" href="${esc(p.live)}" target="_blank" rel="noopener">Live demo</a>`:''}${p.code&&okUrl(p.code)?`<a class="btn" href="${esc(p.code)}" target="_blank" rel="noopener">Source code</a>`:''}</div></article>`).join('')}
+if(REVIEWS.length){$('#reviews').hidden=false;$('#nvr').hidden=false;
+ $('#rw').innerHTML=REVIEWS.map(r=>`<figure class="glass card rvw rv" style="margin:0"><blockquote>${esc(r.quote)}</blockquote><b>${esc(r.name)}</b><small>${esc(r.role||'')}</small></figure>`).join('')}
+setTimeout(()=>$('#load').classList.add('off'),2500);
+
+/* reveal, progress, nav, top */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+$$('.rv').forEach(el=>io.observe(el));
+const links=$$('#menu a'),secs=links.map(a=>$(a.getAttribute('href')));
+addEventListener('scroll',()=>{const h=document.documentElement,p=scrollY/(h.scrollHeight-innerHeight||1);$('#bar').style.transform=`scaleX(${p})`;
+ $('#top').classList.toggle('on',scrollY>700);let cur=0;secs.forEach((s,i)=>{if(s&&!s.hidden&&s.getBoundingClientRect().top<innerHeight*.4)cur=i});links.forEach((a,i)=>a.classList.toggle('on',i===cur))},{passive:true});
+$('#top').onclick=()=>scrollTo({top:0});
+$('#burger').onclick=e=>{const o=$('#menu').classList.toggle('open');e.currentTarget.setAttribute('aria-expanded',o)};
+links.forEach(a=>a.addEventListener('click',()=>{$('#menu').classList.remove('open');$('#burger').setAttribute('aria-expanded',false)}));
+
+/* magnetic buttons + cursor light (desktop only) */
+const fine=matchMedia('(pointer:fine)').matches,rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+if(fine&&!rm){$$('.mag').forEach(b=>{b.addEventListener('pointermove',e=>{const r=b.getBoundingClientRect();b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.18}px,${(e.clientY-r.top-r.height/2)*.28}px)`});b.addEventListener('pointerleave',()=>b.style.transform='')});
+ addEventListener('pointermove',e=>{const l=$('#lamp');l.style.left=e.clientX+'px';l.style.top=e.clientY+'px'},{passive:true})}
+
+/* architecture */
+const N={client:['Client',20,170,'The browser or mobile app. It sends requests to the backend API and shows the results to the user.'],api:['Backend API',270,170,'The core service (for example Node.js and Express). It receives requests, applies business logic and talks to other components.'],auth:['Authentication',270,30,'Checks who the user is, for example with sessions or tokens, and decides what each user is allowed to do.'],db:['Database',540,170,'Stores application data permanently, for example in MongoDB or a SQL database.'],redis:['Redis cache',540,310,'Keeps frequently used data in memory so repeated requests are answered faster and the database is under less load.'],sock:['Socket.IO',270,310,'Keeps a live two-way connection open so the server can push updates such as chat messages instantly.'],ext:['External services',540,30,'Third-party services the backend may call, such as AI APIs, payment providers or email.']};
+const E=[['client','api'],['api','auth'],['api','db'],['api','redis'],['api','sock'],['client','sock'],['api','ext']];
+const ctr=k=>[N[k][1]+65,N[k][2]+30];
+$('#lines').innerHTML=E.map(([a,b])=>{const p=ctr(a),q=ctr(b);return `<line class="fl" x1="${p[0]}" y1="${p[1]}" x2="${q[0]}" y2="${q[1]}"/>`}).join('');
+$('#nodes').innerHTML=Object.entries(N).map(([k,v])=>`<g class="nd" tabindex="0" role="button" data-k="${k}" aria-label="${v[0]}"><rect x="${v[1]}" y="${v[2]}" width="130" height="60" rx="14"/><text x="${v[1]+65}" y="${v[2]+35}">${v[0]}</text></g>`).join('');
+const pick=k=>{$$('.nd').forEach(n=>n.classList.toggle('sel',n.dataset.k===k));$('#info').innerHTML=`<b>${N[k][0]}</b><p>${N[k][3]}</p>`};
+$$('.nd').forEach(n=>{n.onclick=()=>pick(n.dataset.k);n.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();pick(n.dataset.k)}}});
+
+/* terminal */
+const A=(h,t)=>`<a href="${h}" target="_blank" rel="noopener">${t}</a>`;
+const CMD={help:()=>'Available commands: help, about, skills, services, github, linkedin, contact, clear',
+ about:()=>'Ali Haider, Software Engineer in Karachi, Pakistan. BS in Software Engineering from SZABIST. Focused on backend and full-stack engineering.',
+ skills:()=>'Frontend: HTML, CSS, JavaScript\nBackend: JavaScript, Node.js, Express.js, Java, Python\nAPIs: REST APIs, JWT, Socket.IO\nDatabases: MongoDB, Redis, SQL, Pinecone\nTools: Docker, Git, GitHub, Postman, Render, n8n\nCS: OOP, DSA, API Design, Authentication, Caching, Rate Limiting, System Design',
+ services:()=>'Backend Development, REST API Development, Full-Stack Web Applications, Real-Time Applications, Database Integration, AI Chatbot & Workflow Automation.',
+ github:()=>'GitHub: '+A(CONFIG.github,CONFIG.github),linkedin:()=>'LinkedIn: '+A(CONFIG.linkedin,CONFIG.linkedin),
+ contact:()=>'Email: '+A('mailto:'+CONFIG.email,CONFIG.email)+'\nOr use the project form in the Contact section.'};
+const out=$('#tout'),add=(h,c)=>{const d=document.createElement('div');if(c)d.className=c;d.innerHTML=h;out.appendChild(d);out.scrollTop=out.scrollHeight};
+add('Welcome. Type <b>help</b> to see commands.');
+function run(v){v=v.trim().toLowerCase();if(!v)return;add('&gt; '+v.replace(/</g,'&lt;'),'p');if(v==='clear'){out.innerHTML='';return}
+ add(CMD[v]?CMD[v]():`Command not found: ${v.replace(/</g,'&lt;')}. Type help.`)}
+$('#tf').onsubmit=e=>{e.preventDefault();run($('#ti').value);$('#ti').value=''};
+$('#qs').innerHTML=Object.keys(CMD).map(c=>`<button type="button">${c}</button>`).join('');
+$$('#qs button').forEach(b=>b.onclick=()=>run(b.textContent));
+
+/* GitHub repos (public API, real data only) */
+fetch('https://api.github.com/users/alihaider990/repos?sort=updated&per_page=30').then(r=>{if(!r.ok)throw 0;return r.json()}).then(rs=>{
+ const own=rs.filter(r=>!r.fork).slice(0,4);if(!own.length)throw 0;const box=$('#repos');
+ own.forEach(r=>{const a=document.createElement('a');a.className='glass';a.href=r.html_url;a.target='_blank';a.rel='noopener';
+  const b=document.createElement('b');b.textContent=r.name;const s=document.createElement('small');s.textContent=[r.language,r.description].filter(Boolean).join(' · ')||'Public repository';a.append(b,s);box.appendChild(a)})
+}).catch(()=>{$('#repos').innerHTML='<p class="note">Repositories could not be loaded right now. Visit my GitHub profile to see my work.</p>'});
+
+/* inquiry form */
+const TYPES={'Website development':{b:1},'Backend / API development':{b:1},'AI chatbot or automation':{b:1},'Existing application improvements':{b:1},'Job opportunity':{b:0,l:'Tell me about the role and the company'},'Collaboration':{b:0,l:'Tell me about the collaboration idea'},'Something else':{b:1}};
+let type='';const f=$('#f'),show=n=>$$('.step').forEach(s=>s.classList.toggle('on',s.dataset.s==n));
+$('#opts').innerHTML=Object.keys(TYPES).map(t=>`<button type="button">${t}</button>`).join('');
+$$('#opts button').forEach(b=>b.onclick=()=>{type=b.textContent;const c=TYPES[type];$('#ft').textContent=type;$('#fdl').textContent=c.l||'Project details';$('#biz').style.display=c.b?'':'none';show(2);setTimeout(()=>$('#fn').focus(),50)});
+$('#back').onclick=()=>{$('#msg').textContent='';show(1)};
+const bad=(el,m)=>{const w=el.closest('.fld');w.classList.toggle('bad',!!m);const e=w.querySelector('.err');if(e)e.textContent=m||'';return !m};
+f.onsubmit=async e=>{e.preventDefault();const g=n=>f.elements[n].value.trim(),msg=$('#msg');msg.className='';msg.textContent='';
+ let ok=true;ok&=bad(f.elements.name,g('name').length<2?'Please enter your name.':'');
+ ok&=bad(f.elements.email,/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(g('email'))?'':'Please enter a valid email address.');
+ ok&=bad(f.elements.details,g('details').length<20?'Please write at least 20 characters.':'');
+ ok&=bad(f.elements.link,g('link')&&!/^https?:\/\/\S+\.\S+/i.test(g('link'))?'Link must start with http:// or https://':'');
+ if(!ok)return;const btn=$('#send');btn.disabled=true;btn.classList.add('busy');$('#sl').textContent='Sending';
+ const ac=new AbortController(),to=setTimeout(()=>ac.abort(),15000);
+ try{const res=await fetch(CONFIG.api,{method:'POST',headers:{'Content-Type':'application/json'},signal:ac.signal,body:JSON.stringify({type,name:g('name'),email:g('email'),org:g('org'),details:g('details'),budget:TYPES[type].b?g('budget'):'',timeline:TYPES[type].b?g('timeline'):'',link:g('link'),company_site:f.elements.company_site.value,t:Date.now()-T0})});
+  let d={};try{d=await res.json()}catch{}
+  if(res.ok&&d.ok){msg.className='ok';msg.textContent=d.confirmation?'Thank you. Your message was delivered and a confirmation was sent to your email.':'Thank you. Your message was delivered. A confirmation email could not be sent, but I received everything.';f.reset();setTimeout(()=>show(1),5000)}
+  else{msg.className='no';msg.textContent=(d&&d.error)||`Your message could not be sent (error ${res.status}). Please email me at ${CONFIG.email}.`}
+ }catch(err){msg.className='no';msg.textContent=err.name==='AbortError'?`The request timed out. Please try again or email ${CONFIG.email}.`:`Could not reach the server, so your message was not sent. Please email ${CONFIG.email}.`}
+ finally{clearTimeout(to);btn.disabled=false;btn.classList.remove('busy');$('#sl').textContent='Send message'}};
+});
+
+/* 3D hero: neural network */
+addEventListener('load',()=>{
+const ld=$('#load');setTimeout(()=>ld.classList.add('off'),200);
+const cv=$('#gl'),rm=matchMedia('(prefers-reduced-motion:reduce)').matches,low=innerWidth<720||(navigator.hardwareConcurrency||4)<=2;
+let R;try{R=new THREE.WebGLRenderer({canvas:cv,alpha:true,antialias:!low,powerPreference:'low-power'})}catch(e){cv.remove();return}
+R.setPixelRatio(Math.min(devicePixelRatio,low?1:1.75));
+const S=new THREE.Scene(),C=new THREE.PerspectiveCamera(50,1,.1,50);C.position.z=7;const G=new THREE.Group();S.add(G);
+const n=low?26:48,P=[];for(let i=0;i<n;i++){const u=Math.random()*2-1,a=Math.random()*6.283,r=Math.sqrt(1-u*u),k=1.3+Math.random()*1.1;P.push(new THREE.Vector3(r*Math.cos(a)*k,u*k,r*Math.sin(a)*k))}
+const lp=[];for(let i=0;i<n;i++)for(let j=i+1;j<n;j++)if(P[i].distanceTo(P[j])<(low?1.9:1.6))lp.push(P[i].x,P[i].y,P[i].z,P[j].x,P[j].y,P[j].z);
+const lg=new THREE.BufferGeometry();lg.setAttribute('position',new THREE.Float32BufferAttribute(lp,3));
+G.add(new THREE.LineSegments(lg,new THREE.LineBasicMaterial({color:0x8957ff,transparent:true,opacity:.4})));
+const ng=new THREE.BufferGeometry().setFromPoints(P);G.add(new THREE.Points(ng,new THREE.PointsMaterial({color:0x32d9ff,size:.11,transparent:true,opacity:.95})));
+const core=new THREE.Mesh(new THREE.IcosahedronGeometry(.85,1),new THREE.MeshBasicMaterial({color:0xb7a3ff,wireframe:true,transparent:true,opacity:.55}));G.add(core);
+const pa=[];for(let i=0;i<(low?80:220);i++)pa.push((Math.random()-.5)*12,(Math.random()-.5)*8,(Math.random()-.5)*8);
+const pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.Float32BufferAttribute(pa,3));const dust=new THREE.Points(pg,new THREE.PointsMaterial({color:0xb7a3ff,size:.035,transparent:true,opacity:.6}));S.add(dust);
+let w=1,h=1;function size(){const r=cv.parentElement.getBoundingClientRect();w=r.width;h=r.height;R.setSize(w,h,false);C.aspect=w/h;C.updateProjectionMatrix();G.position.x=w>900?2.4:0;G.position.y=w>900?0:-1.3;G.scale.setScalar(w>900?1:.8);if(rm)R.render(S,C)}
+size();addEventListener('resize',size);
+let mx=0,my=0,tx=0,ty=0;addEventListener('pointermove',e=>{mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5},{passive:true});
+let vis=true,run=true;new IntersectionObserver(es=>{vis=es[0].isIntersecting;if(vis)loop()}).observe(cv.parentElement);
+document.addEventListener('visibilitychange',()=>{run=!document.hidden;if(run)loop()});
+if(rm){R.render(S,C);return}
+let t0=performance.now(),raf=0;const base=G.scale.x;
+function loop(){cancelAnimationFrame(raf);if(!vis||!run)return;raf=requestAnimationFrame(loop);
+ const t=(performance.now()-t0)/1000,e=Math.min(t/1.4,1),ease=1-Math.pow(1-e,3);
+ tx+=(mx-tx)*.05;ty+=(my-ty)*.05;G.rotation.y=t*.12+tx*1.2;G.rotation.x=ty*.8;core.rotation.y=-t*.3;core.rotation.x=t*.2;
+ G.scale.setScalar((w>900?1:.8)*ease);dust.rotation.y=t*.02+tx*.3;dust.position.x=-tx*.6;R.render(S,C)}
+loop();
+});
+</script>
+</body>
+</html>
